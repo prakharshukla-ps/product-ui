@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product UI</title>
+		<!-- Link to the external CSS file -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="main-container">
+			<!-- BOGO Section -->
+			<div class="bogo-section">
+				<hr />
+				<span class="text">YAY! It's BOGO</span>
+				<hr />
+			</div>
+
+			<!-- Unit Selection Section -->
+			<div class="unit-selection">
+				<!-- Option 1: 1 Unit -->
+				<label for="option1" class="unit-option">
+					<div class="unit-option-content">
+						<div class="unit-details">
+							<input
+								type="radio"
+								id="option1"
+								name="unit"
+								value="1"
+								data-price="10.00"
+								data-discount="10"
+								checked
+								class="custom-radio"
+							/>
+							<div>
+								<span class="unit-title">1 Unit</span>
+								<span class="discount-badge">10% Off</span>
+								<p class="standard-price-text">Standard Price</p>
+							</div>
+						</div>
+						<div class="unit-price">
+							<p class="current-price">$10.00 USD</p>
+							<p class="original-price">$24.00 USD</p>
+						</div>
+					</div>
+					<!-- Dropdowns for Size and Color - Option 1 -->
+					<div id="options1" class="product-options hidden-options">
+						<div class="product-option-group">
+							<label for="size1">Size</label>
+							<select id="size1" data-unit="1">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color1">Color</label>
+							<div class="color-select-wrapper">
+								<select id="color1" data-unit="1">
+									<option value="">Select Color</option>
+									<option value="Black">Black</option>
+									<option value="White">White</option>
+									<option value="Blue">Blue</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</label>
+
+				<!-- Option 2: 2 Unit (Most Popular) -->
+				<label for="option2" class="unit-option selected-unit-option">
+					<div class="most-popular-ribbon">Most Popular</div>
+					<div class="unit-option-content mb-4">
+						<div class="unit-details">
+							<input
+								type="radio"
+								id="option2"
+								name="unit"
+								value="2"
+								data-price="18.00"
+								data-discount="20"
+								class="custom-radio"
+								checked
+							/>
+							<div>
+								<span class="unit-title">2 Unit</span>
+								<span class="discount-badge">20% Off</span>
+							</div>
+						</div>
+						<div class="unit-price">
+							<p class="current-price">$18.00 USD</p>
+							<p class="original-price">$24.00 USD</p>
+						</div>
+					</div>
+
+					<!-- Dropdowns for Size and Color - Option 2 -->
+					<div id="options2" class="product-options">
+						<div class="product-option-group">
+							<label for="size2a">Size</label>
+							<select id="size2a" data-unit="2">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color2a">Color</label>
+							<div class="color-select-wrapper">
+								<select id="color2a" data-unit="2">
+									<option value="">Select Color</option>
+									<option value="Black">Black</option>
+									<option value="White">White</option>
+									<option value="Blue">Blue</option>
+								</select>
+							</div>
+						</div>
+						<div class="product-option-group">
+							<label for="size2b">Size</label>
+							<select id="size2b" data-unit="2">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color2b">Color</label>
+							<select id="color2b" data-unit="2">
+								<option value="">Select Color</option>
+								<option value="Black">Black</option>
+								<option value="White">White</option>
+								<option value="Blue">Blue</option>
+							</select>
+						</div>
+					</div>
+				</label>
+
+				<!-- Option 3: 3 Unit -->
+				<label for="option3" class="unit-option">
+					<div class="unit-option-content">
+						<div class="unit-details">
+							<input
+								type="radio"
+								id="option3"
+								name="unit"
+								value="3"
+								data-price="24.00"
+								data-discount="30"
+								class="custom-radio"
+							/>
+							<div>
+								<span class="unit-title">3 Unit</span>
+								<span class="discount-badge">30% Off</span>
+							</div>
+						</div>
+						<div class="unit-price">
+							<p class="current-price">$24.00 USD</p>
+							<p class="original-price">$24.00 USD</p>
+						</div>
+					</div>
+					<!-- Dropdowns for Size and Color - Option 3 -->
+					<div id="options3" class="product-options hidden-options">
+						<div class="product-option-group">
+							<label for="size3a">Size</label>
+							<select id="size3a" data-unit="3">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color3a">Color</label>
+							<div class="color-select-wrapper">
+								<select id="color3a" data-unit="3">
+									<option value="">Select Color</option>
+									<option value="Black">Black</option>
+									<option value="White">White</option>
+									<option value="Blue">Blue</option>
+								</select>
+							</div>
+						</div>
+						<div class="product-option-group">
+							<label for="size3b">Size</label>
+							<select id="size3b" data-unit="3">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color3b">Color</label>
+							<div class="color-select-wrapper">
+								<select id="color3b" data-unit="3">
+									<option value="">Select Color</option>
+									<option value="Black">Black</option>
+									<option value="White">White</option>
+									<option value="Blue">Blue</option>
+								</select>
+							</div>
+						</div>
+						<div class="product-option-group">
+							<label for="size3c">Size</label>
+							<select id="size3c" data-unit="3">
+								<option value="">Select Size</option>
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</div>
+						<div class="product-option-group">
+							<label for="color3c">Color</label>
+							<select id="color3c" data-unit="3">
+								<option value="">Select Color</option>
+								<option value="Black">Black</option>
+								<option value="White">White</option>
+								<option value="Blue">Blue</option>
+							</select>
+						</div>
+					</div>
+				</label>
+			</div>
+
+			<!-- Delivery and Total Section -->
+			<div class="delivery-total-section">
+				<p class="free-delivery-text">Free Delivery</p>
+				<p class="total-price-text">
+					Total : <span id="totalPrice">$10.00 USD</span>
+				</p>
+			</div>
+
+			<!-- Error Message Display -->
+			<div id="errorMessage" class="error-message">
+				Please select all size and color options.
+			</div>
+
+			<!-- Add to Cart Button -->
+			<button id="addToCartButton" class="add-to-cart-button">
+				<svg
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path d="M12 4v16m8-8H4"></path>
+				</svg>
+				<span>Add to Cart</span>
+			</button>
+
+			<!-- Powered by Text -->
+			<p class="powered-by-text">@ Powered by Pumper</p>
+		</div>
+
+		<!-- Add to Cart Confirmation Message -->
+		<div id="cartConfirmation" class="cart-confirmation-message">
+			Item(s) added to cart!
+		</div>
+
+		<!-- Link to the external JavaScript file -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
